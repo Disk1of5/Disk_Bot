@@ -45,14 +45,10 @@ export class DiskBot implements DiskBotInterface {
         const twitchMessagePool=new TwitchMessagePool(this.twitchClient, this.logger);
         twitchMessagePool.ProcessMessages();
         const twitchCommands= new TwitchCommands(this, this.twitchClient,twitchMessagePool, this.logger, this.db);
-
         const twitchEventHandler = new TwitchEventHandler(this.twitchClient, this.logger, twitchMessagePool, twitchCommands);
-
-
         this.twitchClient.on('message', async (channel: string, userState: Array<string>, message: string, self: boolean) => {
             await twitchEventHandler.onMessage(channel, userState, message, self)
         });
-
         this.twitchClient.connect();
         this.logger.debug('Connected to Twitch Servers')
     }
