@@ -1,0 +1,25 @@
+{
+  "name": "disk_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "run": "node ./out/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/sqlstring": "^2.2.1",
+    "dotenv": "^8.2.0",
+    "mariadb": "^2.2.0",
+    "sqlstring": "^2.3.1",
+    "tmi.js": "^1.5.0",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/tmi.js": "^1.4.0"
+  }
+}
