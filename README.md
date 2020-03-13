@@ -2,32 +2,31 @@
 
 create a root file called credentials.env
 
-#######Twitch Username
+#Twitch Username
 
 TWITCH_NAME=
 
-#######Twitch OAUTH password
+#Twitch OAUTH password
 
 TWITCH_PASSWORD=
 
-#######comma separated for multiple channels
+#Comma separated for multiple channels
 
 TWITCH_CHANNELS=   
 
-#######keep all owners lowercase
+#keep all owners lowercase, Comma seprated for Multiple owners
 
 TWITCH_OWNERS
-
 
 DB_HOST=localhost
 
 DB_USERNAME=root
 
-#######mariadb db password, this value is also auto picked-up by nodeJS
+#mariadb db password, this value is also auto picked-up by nodeJS
 
 MYSQL_ROOT_PASSWORD=
 
-#######database schema defined in disk_bot.sql
+#database schema defined in disk_bot.sql
 
 DB_DATABASE=disk_bot
 #
